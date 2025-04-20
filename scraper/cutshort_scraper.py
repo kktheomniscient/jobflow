@@ -95,11 +95,11 @@ def main():
         print(f"Found {len(jobs)} featured jobs. Now pushing to the database.")
 
         # Database connection parameters from .env
-        user = os.environ.get("DB_USER")
-        password = os.environ.get("DB_PASSWORD")
-        host = os.environ.get("DB_HOST")
-        port = os.environ.get("DB_PORT")
-        dbname = os.environ.get("DB_NAME")
+        user = os.environ["DB_USER"]
+        password = os.environ["DB_PASSWORD"]
+        host = os.environ["DB_HOST"]
+        port = os.environ["DB_PORT"]
+        dbname = os.environ["DB_NAME"]
 
         # Check for missing parameters
         if not all([user, password, host, port, dbname]):
