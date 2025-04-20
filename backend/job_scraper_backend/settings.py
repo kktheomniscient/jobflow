@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-zg*%t5*j_60w5*49qwbf19_oi)g)6t2(7fdg87f-=jxj#@c1d(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['jobflow-backend.onrender.com']
 
 
 # Application definition
