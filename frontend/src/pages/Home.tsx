@@ -1,13 +1,13 @@
 import { Button } from "@/components/ui/button"
 import { SignedIn, SignedOut, SignInButton, SignUpButton } from "@clerk/clerk-react"
-import { Briefcase, ArrowRight } from "lucide-react"
+import { BriefcaseBusiness, ArrowRight } from "lucide-react"
 import { Link } from "react-router-dom"
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center text-center pt-16 pb-20">
       <div className="max-w-3xl mx-auto px-4">
-        <Briefcase className="h-16 w-16 mb-6 text-accent1 mx-auto" />
+        <BriefcaseBusiness className="h-16 w-16 mb-6 text-accent1 mx-auto" />
         <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
           Find Your Dream Job with <span className="text-accent1">JobFlow</span>
         </h1>
