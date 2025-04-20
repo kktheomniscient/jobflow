@@ -20,6 +20,9 @@ jobs:
         working-directory: ./scraper
         run: pip install -r requirements.txt
 
+      - name: confirm cron is working
+        run: echo "🎉 Cron job is running at $(date)"
+
       - name: execute cutshort_scraper
         working-directory: ./scraper
         env:
@@ -38,4 +41,4 @@ jobs:
           DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
           DB_PORT: ${{ secrets.DB_PORT }}
           DB_NAME: ${{ secrets.DB_NAME }}
-        run: python cutshort_scraper.py
+        run: python topstartups_scraper.py
