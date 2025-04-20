@@ -10,7 +10,7 @@ import psycopg2
 # Load environment variables from .env file
 load_dotenv()
 
-def scrape_topstartups_data(base_url, num_pages=2):
+def scrape_topstartups_data(base_url, num_pages=45):
     """
     Scrapes data from multiple pages of the TopStartups job listing page,
     with a delay between requests, and inserts the data into a database.
