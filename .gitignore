@@ -1,0 +1,89 @@
+# ============================
+# 📁 FRONTEND (Node/React/Vite/Next)
+# ============================
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Node modules
+frontend/node_modules/
+
+# Build output
+frontend/dist/
+frontend/dist-ssr/
+
+# Local environment settings
+frontend/*.local
+frontend/.env
+
+# Editor/IDE stuff
+frontend/.vscode/*
+!frontend/.vscode/extensions.json
+frontend/.idea
+
+# Misc system files
+frontend/.DS_Store
+frontend/*.suo
+frontend/*.ntvs*
+frontend/*.njsproj
+frontend/*.sln
+frontend/*.sw?
+
+# ============================
+# 🐍 BACKEND & SCRAPER (Django & Python)
+# ============================
+
+# Python cache
+**/__pycache__/
+**/*.py[cod]
+**/*.so
+
+# Django-specific
+backend/db.sqlite3
+backend/media/
+backend/staticfiles/
+
+# Virtual environments
+**/venv/
+**/env/
+.env
+*.env
+
+# Test artifacts
+**/.pytest_cache/
+**/.mypy_cache/
+**/.coverage
+**/.coverage.*
+
+# IDE/editor stuff (again for backend/scraper)
+backend/.vscode/
+backend/.idea
+scraper/.vscode/
+scraper/.idea
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# ============================
+# 🧪 General
+# ============================
+
+# Ignore local secrets or config
+secrets/
+config/local/
+
+# Compiled files or temp
+*.bak
+*.tmp
+*.swp
+
