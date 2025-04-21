@@ -8,7 +8,7 @@ from .models import User
 # Create your views here.
 
 @csrf_exempt
-@require_POST
+@require_GET
 def sync_user(request):
     try:
         data = json.loads(request.body)
